@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>온다걸스</title>
+    <!-- 제이쿼리 자리 -->
+    <script src="./js/jquery-3.6.0.min.js"></script>
+
+    <!-- 웹폰트 && 폰트어썸링크 && 외부 제이쿼리/자바스크립트 플러그인 -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+    <script src="./js/slick.js"></script>
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/slick-theme.css">
+    <script src="./js/gsap.min.js"></script>
+    <script src="./js/ScrollMagic.min.js"></script>
+    <script src="./js/debug.addIndicators.min.js"></script>
+    <script src="./js/animation.gsap.min.js"></script>
+
+
+    <!-- !!!! 내가 만든 css / js 가장 아래에 있어야 한다. !!!! -->
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/script.js"></script>
+</head>
+<body>
+    <div class="top-box row">
+        <div class="logo">
+            <img src="./img/logo.gif" alt="#">
+            </div>
+
+            <div class="log-box cell-r">
+
+                <ul class="row">
+                    <li class="cell">
+                        <a href="#">Login</a>
+                    </li>
+                    <li class="cell">
+                        <a href="#">Join</a>
+                    </li>
+                    <li class="cell">
+                        <a href="#">Home</a>
+                    </li>
+                </ul>
+
+            </div>
+
+    </div>
+
+    <div class="menu-box-wrap">
+        <div class="menu-box">
+
+            <div class="menu-list">
+                <ul class="row">
+                    <li class="cell">
+                        <a href="#">전체보기</a>
+                    </li>
+                    <li class="cell">
+                        <a href="#">트레이닝</a>
+                    </li>
+                    <li class="cell">
+                        <a href="#">셔츠</a>
+                    </li>
+                    <li class="cell">
+                        <a href="#">바지</a>
+                    </li>
+                    <li class="cell">
+                        <a href="#">가디건/조끼</a>
+                    </li>
+                    <li class="cell">
+                        <a href="#">후드</a>
+                    </li>
+                    <li class="cell">
+                        <a href="#">코트</a>
+                    </li>
+                    <li class="cell">
+                        <a href="#">아우터</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="menu-search cell-r">
+                <input class="search-bar" type="text" name=""placeholder="원하는 의류 검색">
+                <a class="search-btn" href="#">
+                    <i class="fas fa-search"></i>
+                </a>
+                
+            </div>
+
+        </div>
+    </div>
+    
+    <div class="slider-wrap">
+
+        <div class="slide-content">
+            <img src="./img/visual.jpg" alt="">
+        </div>
+        <div class="slide-content">
+            <img src="./img/visual01.jpg" alt="">
+        </div>
+        <div class="slide-content">
+            <img src="./img/visual02.jpg" alt="">
+        </div>  
+
+    </div>
+
+    <div class="bestpick">
+        <div class="bestpick-tp">
+            <span class="bptp1">BestPick</span>
+            <span class="bptp2">나만의</span>
+            <span class="bptp3">BRAND</span>
+            <span class="bptp4">를 위한</span>
+        </div>
+
+        <div class="bestpick-img-box">
+
+            <div class="summer-box row">
+                <div class="summer-left cell">
+                    <span class="sub sub-1"><b>계절 트랜드</b></span>
+                    <span class="mt1"><p>
+                        무더위 여름철에 가볍게 입을 수 있는<br>
+                        시원한 트랜디한 스타일의 옷으로 <br>
+                        스타일을 맞추면 어떨까요
+                    </p></span>
+                    <div class="pick-box1">
+                    <a class="pick-bar" href="#"> 
+                            MORE
+                          <img class="heart-1" src="./img/icon/like.png" alt="#"
+                          width="21px" height="21px">
+                          <img class="heart-2" src="./img/icon/heartbit.png" alt="#"
+                          width="21px" height="21px">
+                        </a>
+                    </div>
+                </div>
+                <div class="summer-right cell">
+                    <img src="./img/summer.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="shorts-box">
+                <div class="shorts-left cell">
+                    <img src="./img/high.jpg" alt="">
+                </div>
+                <div class="shrots-right cell">
+                    <span class="sub sub-1"><b>하이웨스트 반바지</b></span>
+                    <span class="mt1"><p>
+                        요즘 20-30 대에 유행을 타고있는<br>
+                        반바지 코디로 완성해보세요 <br>
+                    </p></span>
+                    <div class="pick-box2">
+                    <a class="pick-bar" href="#"> 
+                            MORE
+                        <img class="heart-1" src="./img/icon/like.png" alt="#"
+                        width="21px" height="21px">
+                        <img class="heart-2" src="./img/icon/heartbit.png" alt="#"
+                        width="21px" height="21px">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dress-box">
+                <div class="dress-left cell">
+                    <span class="sub sub-1"><b>원피스</b></span>
+                    <span class="mt1"><p>
+                        한장을 걸쳐도 갖춘 느낌을 주는 코디<br>
+                        편함과 코디까지 사로잡아볼까요 <br>
+                    </p></span>
+                    <div class="pick-box3">
+                    <a class="pick-bar" href="#"> 
+                            MORE
+                        <img class="heart-1" src="./img/icon/like.png" alt="#"
+                        width="21px" height="21px">
+                        <img class="heart-2" src="./img/icon/heartbit.png" alt="#"
+                        width="21px" height="21px">
+                        </a>
+                    </div>
+                </div>
+                <div class="dress-right cell">
+                    <img src="./img/dress.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="blous-box">
+                <div class="blous-left cell">
+                    <img src="./img/blous.jpg" alt="">
+                </div>
+                <div class="blous-right cell">
+                    <span class="sub sub-1"><b>블라우스</b></span>
+                    <span class="mt1"><p>
+                        시간이 지나도 많이 선호하는 코디로<br>
+                        깔끔하게 입는 걸 좋아하신다면 <br>
+                        블라우스로 깔끔한 코디를
+                    </p></span>
+                    <div class="pick-box4">
+                    <a class="pick-bar" href="#"> 
+                            MORE
+                        <img class="heart-1" src="./img/icon/like.png" alt="#"
+                        width="21px" height="21px">
+                        <img class="heart-2" src="./img/icon/heartbit.png" alt="#"
+                        width="21px" height="21px">
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    
+    </div>
+
+    <div class="more-clothing-box">
+        <p class="more-title">MORE CLOTHING</p>
+        <div class="more-title-small-box row">
+            <a href="#"><p class="more-title-s cell">상품보기 더보기</p></a>
+        </div>
+        <div class="clothing-list row">
+            <div class="clothing-view cell">
+                <div class="img-box">
+                    <img src="./img/view-1.jpg" alt="">
+                </div>
+                 <div class="txt-box">
+                     나이브 조끼 반팔티 레이어드 세트<br>
+                     <p style="font-family: Questrial;">15,000</p> <p class="won">원</p>
+                </div>
+                <div class="icon-img-box">
+                    <img src="./img/icon/buy!.png" alt="">
+                </div>
+            </div>
+            <div class="clothing-view cell">
+                <div class="img-box">
+                    <img src="./img/view-2.jpg" alt="">
+                </div>
+                <div class="txt-box">
+                    옆트임없는 롱 박시 티셔츠<br>
+                    <p style="font-family: Questrial;">9,900</p> <p class="won">원</p>
+               </div>
+               <div class="icon-img-box">
+                   <img src="./img/icon/buy!.png" alt="">
+               </div>
+            </div>
+            <div class="clothing-view cell">
+                <div class="img-box">
+                    <img src="./img/view-3.jpg" alt="">
+                </div>
+                <div class="txt-box">
+                    스트릿 스퀘어넥 키치 나시 원피스<br>
+                    <p style="font-family: Questrial;">15,900</p> <p class="won">원</p>
+               </div>
+               <div class="icon-img-box">
+                   <img src="./img/icon/buy!.png" alt="">
+               </div>
+            </div>
+            <div class="clothing-view cell">
+                <div class="img-box">
+                    <img src="./img/view-4.jpg" alt="">
+                </div>
+                <div class="txt-box">
+                    위클리 카라넥 벌룬 퍼프<br>
+                    오픈 반팔 블라우스<br>
+                    <p style="font-family: 'Questrial', sans-serif;">15,000</p> <p class="won">원</p>
+               </div>
+               <div class="icon-img-box">
+                   <img src="./img/icon/buy!.png" alt="">
+               </div>
+            </div>
+            <div class="clothing-view2 cell">
+                <div class="img-box">
+                    <img src="./img/view-5.jpg" alt="">
+                </div>
+                <div class="txt-box">
+                    썸머브리즈숏데님<br>
+                    <p style="font-family: Questrial;">15,200</p> <p class="won">원</p>
+               </div>
+               <div class="icon-img-box">
+                   <img src="./img/icon/buy!.png" alt="">
+               </div>
+            </div>
+            <div class="clothing-view2 cell">
+                <div class="img-box">
+                    <img src="./img/view-6.jpg" alt="">
+                </div>
+                <div class="txt-box">
+                    박시핏 반팔티 숏팬츠세트<br>
+                    <p style="font-family: Questrial;">32,000</p> <p class="won">원</p>
+               </div>
+               <div class="icon-img-box">
+                   <img src="./img/icon/buy!.png" alt="">
+               </div>
+            </div>
+            <div class="clothing-view2 cell">
+                <div class="img-box">
+                    <img src="./img/view-7.jpg" alt="">
+                </div>
+                <div class="txt-box">
+                    만능코디 11컬러 벌룬 박시맨투맨<br>
+                    <p style="font-family: Questrial;">11,800</p> <p class="won">원</p>
+               </div>
+               <div class="icon-img-box">
+                   <img src="./img/icon/buy!.png" alt="">
+               </div>
+            </div>
+            <div class="clothing-view2 cell">
+                <div class="img-box">
+                    <img src="./img/view-8.jpg" alt="">
+                </div>
+                <div class="txt-box">
+                    데뷰 퍼프소매 스퀘어넥<br>
+                    크롭 니트 가디건<br>
+                    <p style="font-family: Questrial;">15,000</p> <p class="won">원</p>
+               </div>
+               <div class="icon-img-box">
+                   <img src="./img/icon/buy!.png" alt="">
+               </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer1-bg">
+        <div class="footer1-wrap row">
+
+            <div class="footer1-box1 cell">
+                <div class="notice">
+                    <div class="notice-img">
+                        <img src="./img/banner05_title.gif" alt="">
+                    </div>
+                    <div class="notice-board">
+                        <a href="#">온다걸스 홈페이지가 오픈되었습니다.</a>
+                    </div>
+                    <div class="date">
+                        <span>2021-08-12</span>
+                    </div>
+                    <div class="view-more">
+                        <a href="#">더보기 +</a>
+                    </div>
+                </div>
+                <div class="cus-service-box row">
+                    <div class="guide cell">
+                        <span>가맹문의<br>
+                        고객센터</span>
+                    </div>
+                    <div class="address cell">
+                        <h1 class="number">1688-5228</h1>
+                        <span>팩스 : 062-573-2472</span><br>
+                        <span>이메일 : ondagirls14@naver.com</span>
+                    </div>
+                    <div class="time-guide cell">
+                        <h5 class="time">고객센터 운영시간 [평일 09:00 - 18:00]</h5>
+                        <span>주말 및 공휴일은 문의하기를 이용해주세요.</span><br>
+                        <span>업무가 시작되면 바로 처리해드립니다.</span>
+                    </div>
+                    <div class="quesion">
+                        <a href="#">
+                            <img src="./img/banner06_btn.gif" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer1-box2 cell row">
+                <a class="cell" href="#"><img src="./img/banner07_01.gif" alt=""></a>
+                <a class="cell" href="#"><img src="./img/banner07_02.gif" alt=""></a>
+                <a class="cell" href="#"><img src="./img/banner07_03.gif" alt=""></a>
+                <a class="cell" href="#"><img src="./img/banner07_04.gif" alt=""></a>
+            </div>
+
+            <div class="footer1-box3 cell">
+                <a href=""><img src="./img/banner08.jpg" alt=""></a>
+            </div>
+
+ 
+        </div>
+    </div>
+    <div class="footer2-bg">
+        <div class="footer2-wrap">
+            <div class="bottom-txt-box row">
+                <a class="cell" href="#"><img src="./img/bottom_text01.gif" alt=""></a>
+                <a class="cell" href="#"><img src="./img/bottom_text02.gif" alt=""></a>
+                <a class="cell" href="#"><img src="./img/bottom_text03.gif" alt=""></a>
+            </div>
+            <div class="bottom-txt-box2">
+                <span>법인명(상호) : 온다걸스 대표자(성명) : 김현진 사업자 등록번호 안내 : [166-25-00088] 통신판매업 신고</span><br>
+                <span>전화 : 1688-5228 팩스 : 062-573-2472 주소 : 61071 광주광역시 북구 양산로 38 (양산동) 온다걸스 체인본부</span><br>
+                <span>개인정보관리책임자 : 김현진(ondagirls14@naver.com)</span><br><br>
+                <span>Copyrightⓒ2017여성보세의류체인점 온다걸스. All rights reserved</span>
+            </div>           
+        </div>
+    </div>
+
+
+</body>
+</html>
